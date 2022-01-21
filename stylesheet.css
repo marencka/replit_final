@@ -1,0 +1,383 @@
+:root { 
+  --background_lighter: #FCFCFC;
+  --background_default: #EBECED; 
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body { 
+  background-color: var(--background_default);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+
+footer { 
+  background-color: var(--background_lighter);
+}
+
+.wrapper { 
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--background_lighter);  
+}
+
+.header_container {
+  background-color: var(--background_lighter);  
+  width: 1400px;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.header_container .menu {
+  display: block;
+  width: 80px; 
+  height: 37px; 
+  background-image: url("../images/menu.png"); 
+  background-repeat: no-repeat;
+  border: none; 
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.header_container .logo { 
+  display: block; 
+  position: relative; 
+  left: 0px;
+  top: 10px;
+}
+
+.header_container .header_form input { 
+  width: 650px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px; 
+  border: 1px solid #98999C;
+  position: relative;
+  top: 14px;
+  left: 240px;
+}
+
+.header_container .new { 
+  background-color: #6BB5FF;
+  border-radius: 5px;
+  position: relative;
+  left: 500px;
+  top: 20px;
+  height: 25px;
+}
+
+.main_container {
+  display: flex; 
+  justify-content: space-around;
+}
+
+.main_container .question_form .form { 
+  height: 800px;
+  width: 500px;
+}
+
+.main_container .question_form .form h2 {
+  text-align: center;
+} 
+
+.main_container .question_form .form label { 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main_container .question_form .form #title { 
+  border-radius: 5px;
+  border: 1px solid #98999C;
+  height: 40px;
+  width: 480px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main_container .question_form .form textarea { 
+  border-radius: 5px;
+  border: 1px solid #98999C;
+  height: 40px;
+  width: 480px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  resize: none;
+  height: 300px;
+}
+
+.main_container .question_form .form #submit { 
+  border-radius: 5px;
+  border: 1px solid #6BB5FF;
+  background-color: #B2D9FF; 
+  font-family: "Montserrat", sans-serif;
+  height: 50px;
+  font-size: 18px;
+  position: relative;
+  left: 346px;
+  cursor: pointer;
+}
+
+.main_container .questions .faq { 
+  background-color: #FFC7C7;
+  border-radius: 5px;
+  width: 500px;
+  text-align: center;
+  height: 25px;
+}
+
+.main_container .questions .faq_mobile {
+  display: none;
+}
+
+.main_container .questions .faq a {
+  color: #004182;
+}
+
+.main_container .questions .related {
+  display: flex; 
+  flex-direction: column;
+}
+
+.main_container .questions .related h3 { 
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.main_container .questions .related .related_questions {
+  border: 1px solid #98999C;
+  border-radius: 5px;
+  background-color: var(--background_lighter);
+  height: 900px; 
+  width: 700px;
+}
+
+footer {
+  background-color: var(--background_lighter);
+  position: absolute;
+  bottom: 0; 
+  width: 100%; 
+  height: 60px;
+}
+
+.footer { 
+  width: 1400px;
+  display: flex; 
+  justify-content: space-between;
+  background-color: var(--background_lighter);
+}
+
+.footer .logo {
+  position: relative; 
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.footer .image-redirects {
+  display: flex; 
+  width: 80px;
+  height: 30px;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 14px;
+}
+
+
+
+
+/* Mobile Version */
+@media only screen and (max-width: 767px) { 
+  :root { 
+    --background_lighter: #FCFCFC;
+    --background_default: #EBECED; 
+  }
+  
+  body { 
+    background-color: var(--background_default);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  header { 
+    background-color: var(--background_lighter); 
+  }
+  
+  footer { 
+    background-color: var(--background_lighter);
+  }
+  
+  body { 
+    background-color: var(--background_default);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+  }
+  
+  footer { 
+    background-color: var(--background_lighter);
+  }
+  
+  .wrapper { 
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: var(--background_lighter);  
+  }
+  
+  .header_container {
+    background-color: var(--background_lighter);  
+    width: 300px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .header_container .menu {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/menu.png"); 
+    background-repeat: no-repeat;
+    border: none; 
+    position: relative;
+    left: -30px;
+  }
+  
+  .header_container .logo { 
+    display: none;
+  }
+  
+  .header_container .header_form input { 
+    width: 250px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px; 
+    border: 1px solid #98999C;
+    position: relative;
+    top: 14px;
+    left: 10px;
+  }
+  
+  .header_container .new { 
+    background-color: #6BB5FF;
+    border-radius: 5px;
+    position: relative;
+    top: 22px;
+    height: 25px;
+    left: 40px;
+  }
+
+  .main_container {
+    display: flex; 
+    justify-content: column;
+  }
+
+  .main_container .question_form .form { 
+    height: 500px;
+    width: 400px;
+  }
+
+  .main_container .question_form .form h2 {
+    text-align: center;
+  } 
+
+  .main_container .question_form .form label { 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .main_container .question_form .form #title { 
+    border-radius: 5px;
+    border: 1px solid #98999C;
+    height: 40px;
+    width: 380px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .main_container .question_form .form textarea { 
+    border-radius: 5px;
+    border: 1px solid #98999C;
+    height: 40px;
+    width: 380px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    resize: none;
+    height: 300px;
+  }
+
+  .main_container .question_form .form #submit { 
+    border-radius: 5px;
+    border: 1px solid #6BB5FF;
+    background-color: #B2D9FF; 
+    font-family: "Montserrat", sans-serif;
+    height: 50px;
+    font-size: 18px;
+    position: relative;
+    left: 244px;
+    cursor: pointer;
+  }
+
+  .main_container .faq_mobile
+   { 
+    margin: 0 auto;
+    background-color: #FFC7C7;
+    border-radius: 5px;
+    width: 380px;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  
+  .main_container .questions {
+    display: none;
+  }
+
+  footer {
+    background-color: var(--background_lighter);
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    height: 60px;
+  }
+  
+
+  .footer { 
+    width: 400px;
+    display: flex; 
+    justify-content: space-between;
+    background-color: var(--background_lighter);
+  }
+  
+  .footer .logo {
+    position: relative; 
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer .image-redirects {
+    display: flex; 
+    width: 80px;
+    height: 30px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 14px;
+  }
+  
+}
